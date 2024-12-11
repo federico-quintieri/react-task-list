@@ -115,7 +115,6 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Task Manager</h1>
       <h2>Current Tasks {arrayNotCompletedJSX.length}</h2>
       {arrayNotCompletedJSX}
       <hr />
