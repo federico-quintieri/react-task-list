@@ -11,5 +11,27 @@ img {
 li {
   list-style-type: none;
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.spanStatus {
+  background-color: orange;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+h1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: aquamarine;
 }

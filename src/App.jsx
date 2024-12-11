@@ -114,13 +114,14 @@ function App() {
   );
 
   return (
-    <>
+    <div className="container">
       <h1>Task Manager</h1>
       <h2>Current Tasks {arrayNotCompletedJSX.length}</h2>
       {arrayNotCompletedJSX}
+      <hr />
       <h2>Completed Tasks {arrayCompletedJSX.length}</h2>
       {arrayCompletedJSX}
-    </>
+    </div>
   );
 }
 
