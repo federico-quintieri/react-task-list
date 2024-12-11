@@ -92,7 +92,7 @@ function App() {
     <li key={currIndex}>
       <h3>
         {currElement.title}{" "}
-        <span className="spanStatus">{currElement.state}</span>
+        <span className={`spanStatus ${currElement.state}`}>{currElement.state}</span>
       </h3>
       <p>Priority: {currElement.priority}</p>
       <p>Est. time: {currElement.estimatedTime}</p>
@@ -105,7 +105,7 @@ function App() {
       <li key={currIndex}>
         <h3>
           {currElement.title}{" "}
-          <span className="spanStatus">{currElement.state}</span>
+          <span className={`spanStatus ${currElement.state}`}>{currElement.state}</span>
         </h3>
         <p>Priority: {currElement.priority}</p>
         <p>Est. time: {currElement.estimatedTime}</p>
@@ -116,10 +116,12 @@ function App() {
   return (
     <div className="container">
       <h2>Current Tasks {arrayNotCompletedJSX.length}</h2>
-      {arrayNotCompletedJSX}
+      <ul>{arrayNotCompletedJSX}</ul>
       <hr />
-      <h2>Completed Tasks {arrayCompletedJSX.length}</h2>
-      {arrayCompletedJSX}
+      <ul>
+        <h2>Completed Tasks {arrayCompletedJSX.length}</h2>
+        {arrayCompletedJSX}
+      </ul>
     </div>
   );
 }

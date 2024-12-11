@@ -38,3 +38,15 @@ h1 {
 header {
   background-color: aquamarine;
 }
+
+.in_progress {
+  background-color: aquamarine;
+}
+
+.backlog {
+  background-color: bisque;
+}
+
+.completed {
+  background-color: green;
+}
